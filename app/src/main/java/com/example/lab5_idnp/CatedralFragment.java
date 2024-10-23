@@ -24,24 +24,8 @@ public class CatedralFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_catedral, container, false);
 
-
         ImageView imageView = view.findViewById(R.id.catedralImage);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.catedral_image);
-
-        // Ajustar el tamaño del bitmap
-        int size = Math.min(bitmap.getWidth(), bitmap.getHeight());
-        Bitmap resultBitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(resultBitmap);
-
-        // Crear un Path circular
-        Path path = new Path();
-        float radius = size / 2f;
-        path.addCircle(radius, radius, radius, Path.Direction.CW);
-
-        canvas.clipPath(path);
-        canvas.drawBitmap(bitmap, null, new RectF(0, 0, size, size), new Paint(Paint.ANTI_ALIAS_FLAG));
-
-        imageView.setImageBitmap(resultBitmap);
+        ImageUtils.applyCircularMask(imageView, R.drawable.catedral_image, getResources());
 
         return view;
     }

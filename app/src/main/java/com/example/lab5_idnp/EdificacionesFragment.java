@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,7 +17,13 @@ public class EdificacionesFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_edificaciones, container, false);
+        // Aplicar la imagen circular a la Catedral
+        ImageView catedralImage = view.findViewById(R.id.catedralImage);
+        ImageUtils.applyCircularMask(catedralImage, R.drawable.catedral_image, getResources());
 
+        // Aplicar la imagen circular al Claustro
+        ImageView claustroImage = view.findViewById(R.id.claustroImage);
+        ImageUtils.applyCircularMask(claustroImage, R.drawable.claustro_image, getResources());
         // Configurar onClick para la Catedral de Arequipa
         view.findViewById(R.id.catedralLayout).setOnClickListener(v -> openCatedralFragment());
 
