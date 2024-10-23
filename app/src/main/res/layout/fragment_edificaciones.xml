@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Opción de Catedral de Arequipa -->
+    
     <LinearLayout
         android:id="@+id/catedralLayout"
         android:layout_width="match_parent"
@@ -28,11 +28,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Catedral de Arequipa"
-        android:textSize="18sp"
-        android:textColor="@android:color/white" />
+        android:textSize="26sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"/>
 </LinearLayout>
 
-    <!-- Opción de Claustro de la Compañía -->
+
 <LinearLayout
     android:id="@+id/claustroLayout"
 android:layout_width="match_parent"
@@ -54,8 +55,9 @@ android:scaleType="centerCrop" />
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
 android:text="Claustro de la Compañía"
-android:textSize="18sp"
-android:textColor="@android:color/white" />
+android:textSize="26sp"
+android:textColor="@android:color/white"
+    android:textStyle="bold"/>
     </LinearLayout>
 
     </LinearLayout>
