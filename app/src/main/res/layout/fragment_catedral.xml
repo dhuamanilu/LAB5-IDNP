@@ -2,46 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorBackground"
-    android:orientation="vertical"
+    android:background="@drawable/rounded_custom_background"
+    android:orientation="horizontal"
     android:padding="16dp">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:background="@drawable/rounded_background"> <!-- Aquí aplicas el fondo redondeado -->
 
-        <ImageView
-            android:id="@+id/catedralImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="8dp"
-            android:scaleType="centerCrop" />
+<ImageView
+android:id="@+id/catedralImage"
+android:layout_width="120dp"
+android:layout_height="120dp"
+android:layout_marginEnd="16dp"
+android:scaleType="centerCrop"
+android:src="@drawable/catedral_image"
+android:background="@drawable/rounded_shape" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/sectionTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Catedral de Arequipa"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:orientation="vertical"
+android:gravity="center_vertical">
 
-            <TextView
-                android:id="@+id/catedralText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fue construida con ignimbrita (piedra de origen volcánico), y bóvedas de ladrillo; es el santuario principal de la ciudad."
-                android:textColor="@android:color/white"
-                android:textSize="18sp" />
-        </LinearLayout>
-    </LinearLayout>
+
+<TextView
+    android:id="@+id/sectionTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Catedral de Arequipa"
+    android:textColor="#FFC107"
+    android:textSize="22sp"
+    android:textStyle="bold" />
+
+<!-- Descripción de la Catedral -->
+<TextView
+    android:id="@+id/catedralText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fue construida con ignimbrita (piedra de origen volcánico), y bóvedas de ladrillo; es el santuario principal de la ciudad ocupando todo el lado norte de la Plaza de Armas. Construida totalmente en sillar, exhibe un estilo neorrenacentista con cierta influencia gótica."
+    android:textColor="@android:color/white"
+    android:textSize="16sp" />
 </LinearLayout>
+    </LinearLayout>
