@@ -6,13 +6,13 @@
     android:padding="16dp"
     android:background="@android:color/white">
 
-    <!-- Opción de Catedral de Arequipa -->
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginBottom="16dp">
 
-        <!-- Fondo con bordes redondeados -->
+
         <LinearLayout
             android:id="@+id/catedralLayout"
             android:layout_width="match_parent"
@@ -25,18 +25,18 @@
             android:paddingTop="32dp"
             android:paddingBottom="32dp" />
 
-        <!-- Imagen circular -->
+
         <ImageView
             android:id="@+id/catedralImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
             android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="0dp"
             android:scaleType="centerCrop"
             android:background="@drawable/rounded_shape"
             android:src="@drawable/catedral_image" />
 
-        <!-- Texto superpuesto (Declarado después para estar encima de la imagen) -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -48,13 +48,11 @@
             android:layout_marginStart="90dp" />
     </FrameLayout>
 
-    <!-- Opción de Claustro de la Compañía -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_marginBottom="16dp">
 
-        <!-- Fondo con bordes redondeados -->
         <LinearLayout
             android:id="@+id/claustroLayout"
             android:layout_width="match_parent"
@@ -67,18 +65,17 @@
             android:paddingTop="32dp"
             android:paddingBottom="32dp" />
 
-        <!-- Imagen circular -->
+
         <ImageView
             android:id="@+id/claustroImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
             android:layout_gravity="start|center_vertical"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="0dp"
             android:scaleType="centerCrop"
             android:background="@drawable/rounded_shape"
             android:src="@drawable/claustro_image" />
 
-        <!-- Texto superpuesto (Declarado después para estar encima de la imagen) -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
